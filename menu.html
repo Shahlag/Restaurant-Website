@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Menu</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            .bg-img{
+              background-image: url(https://lns60.be/wp-content/uploads/2014/10/z03-2.jpg);
+              background-size: cover;
+              background-repeat: no-repeat;
+              width: 100vw;
+              height: 100vh;
+            }
+            .overlay{
+              width: 100%;
+              height: 100%;
+              color: #ffff;
+              font-family: "oswald", sans-serif;
+              font-size: 3rem;
+              font-weight: 100;
+              text-transform: uppercase;
+              display: flex;
+              letter-spacing: -2px;
+              align-items: center;
+              justify-content: center;
+              animation: text 3s 1;
+              right: 0;
+              left: 0;
+            }
+            @keyframes text{
+                0%{
+                    color: rosybrown;
+                    margin-bottom: -40px;
+                }
+                30%{
+                    letter-spacing: 25px;
+                    margin-bottom: -40px;
+                }
+                85%{
+                    letter-spacing: 8px;
+                    margin-bottom: -40px;
+                }
+
+            }
+            .wrapper{
+              width: 1200px;
+              margin:100px auto;
+            }
+            .title{
+              text-align:center;
+              margin-bottom: 60px;
+            }
+            .title h4{
+              text-transform:capitalize;
+              font-size:36px;
+              position:relative;
+              display:inline-block;
+            }
+            .title h4 span{
+              display:block;
+              font-size:18px;
+              font-style:italic;
+              color:firebrick;
+              margin-bottom:-10px;
+            }
+
+            .title h4 span::before {
+                position: absolute;
+                content: "";
+                width: 100%;
+                height: 2px;
+                bottom: -15px;
+                left: 0;
+                background-color:firebrick;
+                visibility: hidden;
+                transform: scaleX(0);
+                transition: all ,0.5s ease-in-out 0s;
+            }
+            .title h4 span:hover::before {
+                visibility: visible;
+                transform: scaleX(1);
+            }
+
+            .menu{
+              display:flex;
+              flex-wrap:wrap;
+              justify-content: space-between;
+            }
+            .single-menu{
+              flex-basis: 580px;
+              margin-bottom: 20px;
+              padding-bottom: 20px;
+              border-bottom:1px solid #ddd;
+            }
+            .single-menu:nth-child(5), .single-menu:nth-child(6){
+                border-bottom:0;
+            }
+            .single-menu{
+              display:flex;
+              flex-direction:row;
+              align-items:center;
+            }
+            .single-menu:hover img{
+                border-radius: 0;
+            }
+            .single-menu img{
+              max-width:180px;
+              margin-right:30px;
+              border-radius:50%;
+              border:1px solid #ddd;
+              padding:3px;
+              transition: 1s;
+            }
+            .single-menu h4{
+              margin-bottom: 5px;
+              padding-bottom:5px;
+            }
+            .single-menu h4 span{
+              float:right;
+              font-style:italic;
+            }
+            #Link1{
+                text-align: center;
+                display: block;
+                color: yellowgreen;
+            }
+
+        </style>
+    </head>
+       
+    <body>
+       <div class="bg-img">  
+            <div class="overlay">
+                <h1>menu</h1>
+            </div>
+       </div>
+       <a name="top"></a>
+
+       <div class="wrapper">
+           <div class="title">
+               <h4><span> SALADS, APPETIZERS & SOUPS</span></h4>
+           </div>
+           <div class="menu">
+                <div class="single-menu">
+                    <img src="https://www.straightupfood.com/blog/wp-content/uploads/2020/08/Watermelon-Salad_Straight-Up-Food.jpg" alt="">
+                    <div class="menu-content">
+                        <h4>Watermelon Summer Salad ₹680</h4>
+                        <p>Compressed Water Melon , Feta Cheese ,ginger ,chilly Soya Dressing.</p>
+                    </div>
+                </div>
+                <div class="single-menu">
+                    <img src="https://www.tasteofhome.com/wp-content/uploads/2018/01/Ginger-Sesame-Steamed-Vegetable-Salad_exps173348_TH132104D06_28_3bC_RMS.jpg" alt="">
+                    <div class="menu-content">
+                        <h4>Fresh Garden Green Salad ₹680</h4>
+                        <p>Broccoli, Asparagus, Zucchini, Carrot, Mustard Lime Dressing.</p>
+                    </div>
+                </div>
+                <div class="single-menu">
+                    <img src="https://aubreyskitchen.com/wp-content/uploads/2020/07/healthy-mushroom-soup-in-white-bowl-next-to-bread-300x300.jpg" alt="">
+                    <div class="menu-content">
+                        <h4>Wild Mushroom With Truffle Essence ₹620</h4>
+                        <p> White truffle oil, madeira wine, wild mushrooms, cream.</p>
+                    </div>
+                </div>
+                <div class="single-menu">
+                    <img src="https://asset.slimmingworld.co.uk/content/media/8672/roasted-tomato-and-basil-soup_sw_recipe.jpg?v1=JGXiore20qg9NNIj0tmc3YQhnPv6zpQRuqf0TeFhzmS_tpqyH95vCwrwO-Q4wGPD64HzoBTrlblPE0rqMr4ghUjLyNITq8uMQpx5MZRk4Gyo-D3Ig2OtWh8v82WEqaOT&width=640&height=640" alt="">
+                    <div class="menu-content">
+                        <h4>Oven Roasted Tomatoes, Basil Soup ₹620</h4>
+                        <p> Balsamic vinegar, carrots, olive oil, roma tomatoes, sea salt.</p>
+                    </div>
+                </div>
+                <div class="single-menu">
+                    <img src="https://www.hyattrestaurants.com/uploaded/signaturedishimages/signaturedishimage_nutrition-bomb--micro-greens--vegetable-and-crispy-focaccia.webp" alt="">
+                    <div class="menu-content">
+                        <h4>Mango Salad ₹680</h4>
+                        <p>Green Mango, Tomato And Avocado Salad, Chili Lime Dressing.</p>
+                    </div>
+                </div>
+                <div class="single-menu">
+                    <img src="https://storcpdkenticomedia.blob.core.windows.net/media/recipemanagementsystem/media/recipe-media-files/recipes/retail/x17/2020_df_retail_super-easy-chicken-and-rice-soup_20247_600x600.jpg?ext=.jpg" alt="">
+                    <div class="menu-content">
+                        <h4>Chicken Soup ₹680</h4>
+                        <p>Greek yogurt, leftover roast chicken, cheese, carrots, olive.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="title">
+                <h4><span> BETWEEN BREADS</span></h4>
+            </div>
+            <div class="menu">
+                <div class="single-menu">
+                    <img src="http://www.pamperedchef.ca/iceberg/com/recipe/1040076-lg.jpg" alt="">
+                    <div class="menu-content">
+                        <h4>Grilled Vegetable Panini ₹880</h4>
+                        <p>Cream Cheese, Avocado, Vine Ripened Tomato.</p>
+                    </div>
+                </div>
+                <div class="single-menu">
+                    <img src="https://simmertoslimmer.com/wp-content/uploads/2021/06/Paneer-Kathi-Assembling-Steps-3.jpg" alt="">
+                    <div class="menu-content">
+                        <h4>Paneer Kathi Roll ₹880</h4>
+                        <p>Amaranth Bread, Masala Paneer Tikka, Masala Onion, Mint Chutney.</p>
+                    </div>
+                </div>
+                <div class="single-menu">
+                    <img src="https://hurrythefoodup.com/wp-content/uploads/2020/07/Avocado-Toast-with-Cottage-Cheese-1-500x500.jpg" alt="">
+                    <div class="menu-content">
+                        <h4>Open Feta, Sour-Dough Bread ₹880</h4>
+                        <p>Layered sandwich with Russian salad, tomato, cucumber, cheddar cheese, iceberg lettuce and mustard mayonnaise (gluten, lactose).</p>
+                    </div>
+                </div>
+                <div class="single-menu">
+                    <img src="https://www.diannesvegankitchen.com/wp-content/uploads/2019/08/Burger-square-500x500.jpg" alt="">
+                    <div class="menu-content">
+                        <h4>Vegetable Quinoa Burger ₹880</h4>
+                        <p>Pan seared quinoa patty, micro greens, mayonnaise in whole wheat burger roll (gluten, sesame).</p>
+                    </div>
+                </div>                 
+            </div>
+
+
+
+            <div class="title">
+                <h4><span> MAIN</span></h4>
+            </div>
+                    <div class="menu">
+                        <div class="single-menu">
+                            <div class="menu-content">
+                                <h4>Penne Marinara Sauce ₹1350</h4>
+                                <p>Whole wheat penne, garden vegetables and marinara sauce in extra virgin olive oil (gluten, lactose).</p>
+                            </div>
+                        </div>
+                        <div class="single-menu">
+                            <div class="menu-content">
+                                <h4>Torchetti Pasta (286.8 Kcal) ₹1350</h4>
+                                <p>Classic Italian pasta in extra virgin olive oil, garlic, chilli flakes, oregano, parsley and parmesan cheese (gluten, lactose).</p>
+                            </div>
+                        </div>   
+                        <div class="single-menu">
+                            <div class="menu-content">
+                                <h4>Truffle Omelette ₹1750</h4>
+                                <p>French inspired, six organic eggs, butter cooked with black truffle, crisp lettuce (eggs, lactose, truffle).</p>
+                            </div>
+                        </div>
+                        <div class="single-menu">
+                            <div class="menu-content">
+                                <h4>Grilled Chicken ₹1750</h4>
+                                <p>Mushroom pan extract, potato mash, Red wine vinegar, dijon mustard and bouquetière.</p>
+                            </div>
+                        </div>
+                        <div class="single-menu">
+                            <div class="menu-content">
+                                <h4>Crumb Fried Pomfret, Tartare Sauce ₹2150</h4>
+                                <p>Pomfret fish, capers, Tarter sauce, olive oil, Bread crumbs and lemon juice (fish, lactose, soya).</p>
+                            </div>
+                        </div>
+                        <div class="single-menu">
+                            <div class="menu-content">
+                                <h4>Cajun Prawns ₹2150</h4>
+                                <p>Bell peppers, prawns, sweetcorn, olive oil, cajun, stir fried greens and baked potatoes (shell fish, dairy).</p>
+                            </div>
+                        </div>   
+                  </div>  
+                        
+                        
+
+                  <div class="title">
+                        <h4><span>DESSERT</span></h4>
+                  </div>
+                        <div class="menu">
+                            <div class="single-menu">
+                                <div class="menu-content">
+                                    <h4>Café Viennois ₹800</h4>
+                                    <p>A classic dessert offering layers of brewed coffee, whipped cream and chocolate, garnished with wafer rolls (lactose).</p>
+                                </div>
+                            </div>              
+                            <div class="single-menu">
+                              <div class="menu-content">
+                                  <h4>Hot Chocolate Cake ₹800</h4>
+                                  <p>Gooey chocolate cake with sea salt caramel krispies and vanilla ice cream (gluten, eggs, lactose).</p>
+                              </div>
+                          </div>
+                          <div class="single-menu">
+                              <div class="menu-content">
+                                  <h4>Victoria's Tea Sponge ₹800</h4>
+                                  <p>A noble and iconic tea lounge classic offering, Victoria sponge filled with homemade strawberry jam, sour strawberry compote and thick vanilla cream (gluten, eggs, lactose).</p>
+                              </div>
+                          </div>
+                          <div class="single-menu">
+                            <div class="menu-content">
+                                <h4>Fig Ice Cream Éclair Chocolate Sauce ₹800</h4>
+                                <p>Choux pastry with sugar free fig ice cream filling and chocolate sauce (gluten, lactose).</p>
+                            </div>
+                          </div>                     
+                        </div>
+        </div>
+        <p align="center"><i>Please inform our associate if you are allergic to any ingredients.<br> All prices are subject to government taxes.</p></i><br>
+        <a href="#top" id="Link1"> Back to top </a>
+    </body>
+</html>
